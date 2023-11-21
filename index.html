@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Rating Component</title>
+</head>
+
+<body>
+  <main>
+    <!-- Main container -->
+    <div class="container grid-flow">
+      <div class="star-icon-container">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+      <h1 class="title">How did we do?</h1>
+      <p class="desc">Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <!-- rating 1-5 -->
+      <ul class="rating">
+        <li><button class="ratingbtn" value="1">1</button></li>
+        <li><button class="ratingbtn" value="2">2</button></li>
+        <li><button class="ratingbtn" value="3">3</button></li>
+        <li><button class="ratingbtn" value="4">4</button></li>
+        <li><button class="ratingbtn" value="5">5</button></li>
+      </ul>
+      <button class="button">Submit</button>
+    </div>
+    <!-- Thank you -->
+    <div class="thankyou grid-flow hidden">
+      <img src="images/illustration-thank-you.svg" alt="">
+      <p class="selected">You selected <span class="ratingselected"></span> out of 5</p>
+      <h2 class="thankyou-title">Thank you!</h2>
+      <p class="desc">We appreciate you taking the time to give a rating.
+        <span class="desc-linebreak">If you ever need more support, don't hesitate to get in touch!</span>
+      </p>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

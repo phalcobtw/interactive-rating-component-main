@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --lightgrey: hsl(217, 12%, 63%);
+  --mediumgrey: hsl(216, 12%, 54%);
+  --darkblue: hsl(213, 19%, 18%);
+  --verydarkblue: hsl(216, 12%, 8%);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--verydarkblue);
+}
+
+.container {
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 27rem;
+  background: #24282b;
+  background: radial-gradient(at center top, #24282b, #1521319c);
+}
+
+.grid-flow {
+  display: grid;
+  place-items: start;
+  gap: 2rem;
+}
+
+.title {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.desc {
+  line-height: 1.5;
+  color: var(--mediumgrey);
+}
+
+.button {
+  background-color: var(--orange);
+  padding: 0.8rem;
+  border-radius: 2rem;
+  border: none;
+  width: 100%;
+  color: var(--white);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.star-icon-container {
+  background-color: var(--darkblue);
+  display: grid;
+  padding: 0.9rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+ul {
+  list-style-type: none;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+
+.ratingbtn {
+  border: none;
+  background-color: var(--darkblue);
+  color: var(--mediumgrey);
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.23rem 0 0 0;
+  transition: 0.3s;
+}
+
+.ratingbtn:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.ratingbtn:focus {
+  background-color: var(--lightgrey);
+  color: var(--white);
+}
+
+.thankyou {
+  background: #24282b;
+  background: radial-gradient(at center top, #24282b, #1521319c);
+  padding: 2rem;
+  width: 27rem;
+  border-radius: 1rem;
+  place-items: center;
+  text-align: center;
+  gap: 1.3rem;
+}
+
+.selected {
+  background-color: var(--darkblue);
+  color: var(--orange);
+  padding: 0.5rem 1.3rem;
+  border-radius: 1rem;
+}
+
+.thankyou-title {
+  color: var(--white);
+  font-size: 1.7em;
+  font-weight: 900;
+}
+
+.thankyou .desc {
+  font-size: 1.02em;
+}
+
+.hidden {
+  display: none;
+}
